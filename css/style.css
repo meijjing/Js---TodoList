@@ -1,0 +1,177 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+
+/* reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Noto Sans KR';
+  background: #f4f2f1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'JUA';
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.75rem;
+}
+
+.header {
+  width: 340px;
+  height: 20vh;
+  margin: 0 auto;
+  background: #585859;
+  position: relative;
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: color;
+  border-radius: 8px 8px 0 0;
+}
+
+.header .clear {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .reload {
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.header #date {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.content {
+  width: 340px;
+  margin: 0 auto;
+  height: 65vh;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+#list {
+  height: 55vh;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#list li {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f4f2f1;
+}
+
+#list li .check {
+  width: 22px;
+  height: 22px;
+  line-height: 24px;
+  border: 1px solid #8c8c8c;
+  border-radius: 50%;
+  outline: none;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+#list li .fa-check {
+  text-align: center;
+}
+
+#list li .text {
+  line-height: 24px;
+  width: calc(100% - 60px);
+  margin: 0;
+  word-break: break-all;
+}
+
+#list li .line-through {
+  text-decoration: line-through;
+  color: #8c8c8c;
+}
+
+#list li .delete {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.add-item {
+  height: 10vh;
+  border-top: 1px solid #f4f2f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.add-item>input {
+  width: 85%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #8c8c8c;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.add-item>button {
+  width: 15%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 28px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.add-item button:hover {
+  background-color: #585859;
+  border: 1px solid #585859
+}
+
+.add-item button:active {
+  opacity: .7;
+}
