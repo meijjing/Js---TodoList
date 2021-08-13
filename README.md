@@ -6,3 +6,4 @@
 * refresh button 클릭 시, 새로고침
 * addEventListener 이벤트 동시발생 기능 구현
 * todo-list 클릭 시, todo의 상태 변경
+* 페이지 reload 시, header BgImg 랜덤으로 변경
