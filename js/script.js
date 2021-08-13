@@ -128,12 +128,14 @@ list.addEventListener("click", function (event) {
 
 // bg random change
 const bgArr = new Array();
-bgArr[0] = "../img/bg-1.jpg";
-bgArr[1] = "../img/bg-2.jpg";
-bgArr[2] = "../img/bg-3.jpg";
-bgArr[3] = "../img/bg-4.jpg";
-bgArr[4] = "../img/bg-5.jpg";
+bgArr[0] = "img/bg-1.jpg";
+bgArr[1] = "img/bg-2.jpg";
+bgArr[2] = "img/bg-3.jpg";
+bgArr[3] = "img/bg-4.jpg";
+bgArr[4] = "img/bg-5.jpg";
 
 function showBg() {
-  const bgNum = Math.round(Math.random() * 1);
+  var bgNum = Math.round(Math.random() * 5);
+  var bg = document.getElementById("bgImg");
+  bg.src = bgArr[bgNum];
 }
